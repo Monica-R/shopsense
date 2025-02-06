@@ -2,9 +2,9 @@ import './Sidebar.css'
 
 function Sidebar() {
   return (
-    <>
-    SIDEBAR
-    </>
+    <aside>
+      SIDEBAR
+    </aside>
   )
 }
 
