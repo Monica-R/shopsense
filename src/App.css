@@ -11,8 +11,13 @@ nav {
 
 aside {
   width: 20%;
-  height: 80vh;
+  min-height: 80vh;
   background-color: violet;
+}
+
+.main {
+  width: 70%;
+  margin: 0 auto;
 }
 
 footer {

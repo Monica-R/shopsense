@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import productListArray from '/src/database/products.json';
 import ProductCard from '../ProductCard/ProductCard';
+import './ProductList.css'
 
 function ProductList() {
 
@@ -13,7 +14,7 @@ function ProductList() {
     return mappingProducts;
   }
   return (
-    <>{ mapProducts() }</>
+    <section className='product-list'>{ mapProducts() }</section>
   )
 }
 
