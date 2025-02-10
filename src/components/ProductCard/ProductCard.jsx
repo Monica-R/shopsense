@@ -9,7 +9,7 @@ function ProductCard({ item }) {
         <img src={`${item.thumbnail}`} alt={`item-${item.id}`} />
       </div>
       <h4 className='product-title'>{ item.title }</h4>
-      <p className='product-description'>{ item.description }</p>
+      <span className='category-item'>{ item.category }</span>
       <span className="product-price">{ item.price }</span>
     </figure>
   )
