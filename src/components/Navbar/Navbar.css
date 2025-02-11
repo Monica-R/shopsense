@@ -1,0 +1,77 @@
+.nav {
+  width: 100%;
+  height: 16vh;
+  grid-column: 2 / 6;
+  grid-row: 1;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.nav__div {
+  display: flex;
+  padding: 2rem 0;
+}
+
+.nav__div-greeting {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__div-options {
+  flex-basis: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-icon {
+  display: flex;
+  width: 30%;
+  height: 2.5rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  color: #a0a0a0;
+}
+
+.search-icon-bell {
+  color: #a0a0a0;
+  font-size: 1.4rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+}
+
+.profile-img {
+  display: block;
+  width: 2.6rem;
+  height: 2.6rem;
+  background-image: url("/public/images/profile.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 99%;
+  -webkit-border-radius: 99%;
+  -moz-border-radius: 99%;
+  -ms-border-radius: 99%;
+  -o-border-radius: 99%;
+  outline: 1px solid gray;
+}
+
+.profile-name, .nav__div-greeting {
+  font-weight: bolder;
+}
+
+.profile-name {
+  font-size: .8rem;
+}

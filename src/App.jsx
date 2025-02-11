@@ -12,13 +12,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <Sidebar />
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route path='/about' element={<About />}/>
         <Route path='/details' element={<ItemDetails />}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
+      <Sidebar />
       <Footer />
     </>
   )

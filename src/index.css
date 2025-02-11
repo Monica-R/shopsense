@@ -1,9 +1,16 @@
 :root {
-  --black: #333;
+  --black: #11191f;
   --white: #fff;
+  --grey: #f0f0f0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+}
+#root {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto, 1fr, auto;
+  min-height: 100vh;
 }
 
 *{
@@ -20,4 +27,14 @@
 
 body {
   font-size: 100%;
+  background-color: var(--grey);
+}
+
+aside {
+  grid-row: 2;
+  color: var(--white);
+}
+
+.main {
+  grid-column: 2 / 6;
 }
