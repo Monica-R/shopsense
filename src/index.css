@@ -19,20 +19,14 @@
   box-sizing: border-box;
 }
 
-#root {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 body {
   font-size: 100%;
-  background-color: var(--grey);
 }
 
 aside {
   grid-row: 2;
   color: var(--white);
+  font-size: 1.5rem;
 }
 
 .main {

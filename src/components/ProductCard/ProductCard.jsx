@@ -1,8 +1,8 @@
-import React from 'react'
-import './ProductCard.css'
-import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons'
+import React from 'react';
+import './ProductCard.css';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 function ProductCard({ item }) {
 
@@ -16,7 +16,7 @@ function ProductCard({ item }) {
       <span className="product-price">{ item.price }</span>
       <button className='delete-button'> <FontAwesomeIcon icon={faTrash}/> </button>
       <button className='update-button'> <FontAwesomeIcon icon={faEdit}/> </button>
-      <Link className='details-link' to="/">Detalles</Link>
+      <Link className='details-link' to="/" title="More info"> <FontAwesomeIcon icon={faEye}/> </Link>
     </figure>
   )
 }
