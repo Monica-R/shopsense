@@ -1,11 +1,12 @@
 import React from 'react'
 import ProductList from '../components/ProductList/ProductList'
 
-function HomePage() {
+function HomePage({products, onDeleting}) {
+  console.table(products);
   return (
     <>
       <main className="main">
-        <ProductList />
+        <ProductList productsList={products} onDeleting={onDeleting}/>
       </main>
     </>
   )

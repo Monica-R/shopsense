@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faTrash, faEdit } from '@fortawesome/free-solid-svg-icons';
 
-function ProductCard({ item }) {
+function ProductCard({ item, onDeleting }) {
 
   return (
     <figure className='product-item'>
@@ -14,7 +14,7 @@ function ProductCard({ item }) {
       <h4 className='product-title'>{ item.title }</h4>
       <span className='category-item'>{ item.category }</span>
       <span className="product-price">{ item.price }</span>
-      <button className='delete-button'> <FontAwesomeIcon icon={faTrash}/> </button>
+      <button className='delete-button' onClick={() => onDeleting(item.id)}> <FontAwesomeIcon icon={faTrash}/> </button>
       <button className='update-button'> <FontAwesomeIcon icon={faEdit}/> </button>
       <Link className='details-link' to="/" title="More info"> <FontAwesomeIcon icon={faEye}/> </Link>
     </figure>

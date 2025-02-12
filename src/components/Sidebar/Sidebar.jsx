@@ -12,7 +12,7 @@ function Sidebar() {
       </div>
       <ul className='navbar-side'>
         <li>
-          <Link className='navbar-link' to="/"><FontAwesomeIcon className='icons' icon={faTh}/>All Products</Link>
+          <Link className='navbar-link' to="/products"><FontAwesomeIcon className='icons' icon={faTh}/>All Products</Link>
         </li>
         <li>
           <Link className='navbar-link' to="/"><FontAwesomeIcon className='icons' icon={faPlus}/>Add product</Link>
