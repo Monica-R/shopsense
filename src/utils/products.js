@@ -17,3 +17,21 @@ export const deleteProduct = (products, productId) => {
     const filteredProducts = products.filter((product) => product.id !== productId);
     return filteredProducts;
 }
+
+export const updateProduct = (products, productId, productName, price, brand, stock, URLImage, description) => {
+    return products.map((product) => {
+        if(product.id === productId) {
+            //product.images.push(URLImage)
+            return {
+                ...product,
+                title : productName,
+                price : price,
+                brand : brand,
+                stock : stock,
+                thumbnail : URLImage,
+                description : description
+            }
+        }
+        return product; //En caso de no haber cambios
+    });
+}

@@ -38,6 +38,7 @@ button {
 }
 
 .update-button {
+  font-size: calc(1.4rem + .3vw);
   color: rgb(99, 179, 255);
 }
 

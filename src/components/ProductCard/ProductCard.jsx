@@ -15,7 +15,7 @@ function ProductCard({ item, onDeleting }) {
       <span className='category-item'>{ item.category }</span>
       <span className="product-price">{ item.price }</span>
       <button className='delete-button' onClick={() => onDeleting(item.id)}> <FontAwesomeIcon icon={faTrash}/> </button>
-      <button className='update-button'> <FontAwesomeIcon icon={faEdit}/> </button>
+      <Link className='update-button' to={`/products/${item.id}`}> <FontAwesomeIcon icon={faEdit}/> </Link>
       <Link className='details-link' to="/" title="More info"> <FontAwesomeIcon icon={faEye}/> </Link>
     </figure>
   )
