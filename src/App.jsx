@@ -12,6 +12,7 @@ import NotFound from './pages/NotFound';
 import AllProducts from './pages/AllProducts';
 import EditProduct from './pages/EditProduct';
 import AddProduct from './pages/AddProduct';
+import Categories from './pages/Categories';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
         <Route path='/products' element={<AllProducts productsList={ productsArray } onDeleting={deletetingProduct}/>} />
         <Route path='/products/:productId' element={<EditProduct products={ productsArray } setProducts={setProductsArray}/>}/>
         <Route path='/addproduct' element={<AddProduct products={ productsArray } setProducts={setProductsArray} />}/>
+        <Route  path='/categories' element={<Categories products={ productsArray } />}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
       <Sidebar />
