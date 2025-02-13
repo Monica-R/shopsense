@@ -11,6 +11,7 @@ import ItemDetails from './pages/ItemDetails';
 import NotFound from './pages/NotFound';
 import AllProducts from './pages/AllProducts';
 import EditProduct from './pages/EditProduct';
+import AddProduct from './pages/AddProduct';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/details' element={<ItemDetails />}/>
         <Route path='/products' element={<AllProducts productsList={ productsArray } onDeleting={deletetingProduct}/>} />
         <Route path='/products/:productId' element={<EditProduct products={ productsArray } setProducts={setProductsArray}/>}/>
+        <Route path='/addproduct' element={<AddProduct products={ productsArray } setProducts={setProductsArray} />}/>
         <Route path='*' element={<NotFound />}/>
       </Routes>
       <Sidebar />

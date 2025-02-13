@@ -15,7 +15,7 @@ function Sidebar() {
           <Link className='navbar-link' to="/products"><FontAwesomeIcon className='icons' icon={faTh}/>All Products</Link>
         </li>
         <li>
-          <Link className='navbar-link' to="/"><FontAwesomeIcon className='icons' icon={faPlus}/>Add product</Link>
+          <Link className='navbar-link' to="/addproduct"><FontAwesomeIcon className='icons' icon={faPlus}/>Add product</Link>
         </li>
         <li>
           <Link className='navbar-link' to="/"><FontAwesomeIcon className='icons' icon={faTags}/>Categories</Link>

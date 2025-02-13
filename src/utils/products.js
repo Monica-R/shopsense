@@ -21,7 +21,7 @@ export const deleteProduct = (products, productId) => {
 export const updateProduct = (products, productId, productName, price, brand, stock, URLImage, description) => {
     return products.map((product) => {
         if(product.id === productId) {
-            //product.images.push(URLImage)
+            product.images.push(URLImage)
             return {
                 ...product,
                 title : productName,
@@ -34,4 +34,19 @@ export const updateProduct = (products, productId, productName, price, brand, st
         }
         return product; //En caso de no haber cambios
     });
+}
+
+export const addProduct = (products, productName, description, category, price, stock, brand, urlImage) => {
+    const newProduct = {
+        id: Date.now(),
+        title: productName,
+        description: description,
+        category: category,
+        price: price,
+        stock: stock,
+        brand: brand,
+        images: [urlImage],
+        thumbnail: urlImage
+    }
+    return [newProduct, ...products];
 }
