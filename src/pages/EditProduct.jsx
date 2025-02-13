@@ -32,11 +32,11 @@ function EditProduct({ products, setProducts }) {
         )
 
         setProducts(updatedProducts);
-        console.log(products)
+        alert('Se ha editado correctamente.');
     }
   return (
     <section className='edit-section'>
-      <form action="" className="form-edit" onSubmit={handleSubmit}>
+      <form className="form-edit" onSubmit={handleSubmit}>
         <label htmlFor="name-product">Nombre del producto</label>
         <input type="text" id="name-product" placeholder={productToEdit.title} required onChange={(e) => setNameProduct(e.target.value)}/>
         <label htmlFor="num">Precio</label>
