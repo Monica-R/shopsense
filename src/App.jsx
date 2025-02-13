@@ -36,7 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage products={ productsArray } onDeleting={ deletetingProduct }/>}/>
         <Route path='/about' element={<About />}/>
-        <Route path='/details' element={<ItemDetails />}/>
+        <Route path='/products/:productId/details' element={<ItemDetails products={ productsArray } />}/>
         <Route path='/products' element={<AllProducts productsList={ productsArray } onDeleting={deletetingProduct}/>} />
         <Route path='/products/:productId' element={<EditProduct products={ productsArray } setProducts={setProductsArray}/>}/>
         <Route path='/addproduct' element={<AddProduct products={ productsArray } setProducts={setProductsArray} />}/>
