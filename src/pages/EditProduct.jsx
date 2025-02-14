@@ -36,6 +36,7 @@ function EditProduct({ products, setProducts }) {
     }
   return (
     <section className='edit-section'>
+      <h2 className='edit-section__h2'>Edit product</h2>
       <form className="form-edit" onSubmit={handleSubmit}>
         <label htmlFor="name-product">Nombre del producto</label>
         <input type="text" id="name-product" placeholder={productToEdit.title} required onChange={(e) => setNameProduct(e.target.value)}/>

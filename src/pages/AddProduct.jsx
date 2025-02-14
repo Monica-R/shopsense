@@ -40,6 +40,7 @@ function AddProduct({ products, setProducts }) {
 
   return (
     <section className='add-section'>
+      <h2 className='add-section__h2'>Add product</h2>
       <form className="add-form-product" onSubmit={handleSubmit}>
         <label htmlFor="title">Product Name</label>
         <input type="text" id="title" onChange={(e) => setTitle(e.target.value)} required/>
