@@ -20,6 +20,9 @@ function Sidebar() {
         <li>
           <Link className='navbar-link' to="/categories"><FontAwesomeIcon className='icons' icon={faTags}/>Categories</Link>
         </li>
+        <li>
+          <Link className='navbar-link' to="/about">About</Link>
+        </li>
       </ul>
     </aside>
   )

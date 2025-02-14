@@ -8,7 +8,7 @@ function Categories({ products }) {
     let uniqueCategoriesArray = Array.from(uniquesCategories);
   return (
     <div className='categories'>
-      { uniqueCategoriesArray.map(category => <button>{category}</button>) }
+      { uniqueCategoriesArray.map(category => <button className='category-button'>{category}</button>) }
     </div>
   )
 }
